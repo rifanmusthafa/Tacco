@@ -1,28 +1,46 @@
+const navLinks = [
+  { href: '#home', label: 'Home' },
+  { href: '#about', label: 'About' },
+  { href: '#products', label: 'Products' },
+  { href: '#gallery', label: 'Gallery' },
+  { href: '#contact', label: 'Contact' },
+]
+
 const socialLinks = [
-  {
-    name: 'Twitter',
-    href: '#',
-    icon: (
-      <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-      </svg>
-    ),
-  },
+  // Instagram
   {
     name: 'Instagram',
-    href: '#',
+    href: 'https://www.instagram.com/tacco.in/',
     icon: (
-      <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-      </svg>
+      <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
     ),
   },
+
+  // WhatsApp
   {
-    name: 'Facebook',
-    href: '#',
+    name: 'WhatsApp',
+    href: 'https://wa.me/919074039713',
+    icon: (
+      <svg
+      className="h-5 w-5"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path d="M20.52 3.48A11.82 11.82 0 0012.04 0C5.4 0 .12 5.28.12 11.92c0 2.1.55 4.15 1.6 5.97L0 24l6.25-1.64a11.87 11.87 0 005.79 1.48h.01c6.64 0 11.92-5.28 11.92-11.92 0-3.18-1.24-6.17-3.45-8.44zM12.05 21.5a9.53 9.53 0 01-4.86-1.34l-.35-.21-3.71.98.99-3.62-.23-.37a9.47 9.47 0 01-1.46-5.02c0-5.25 4.27-9.52 9.52-9.52 2.54 0 4.92.99 6.71 2.8a9.45 9.45 0 012.8 6.72c0 5.25-4.27 9.52-9.51 9.52zm5.37-7.13c-.29-.15-1.71-.84-1.98-.94-.27-.1-.47-.15-.67.15-.2.29-.77.94-.95 1.13-.17.2-.35.22-.64.07-.29-.15-1.23-.45-2.34-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.35.44-.52.15-.17.2-.29.3-.49.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.29-1.04 1.01-1.04 2.46s1.07 2.85 1.22 3.05c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.09 1.71-.7 1.95-1.38.24-.68.24-1.27.17-1.38-.07-.1-.27-.15-.56-.29z" />
+    </svg>
+    ),
+  },
+
+  // Gmail
+  {
+    name: 'Gmail',
+    href: 'mailto:support@tacco.in',
     icon: (
       <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        <path d="M12 13.065L.8 4.8V19.2c0 .66.54 1.2 1.2 1.2h20c.66 0 1.2-.54 1.2-1.2V4.8L12 13.065zM12 10.935L23.2 2.7C22.99 2.28 22.56 2 22.08 2H1.92C1.44 2 1.01 2.28.8 2.7L12 10.935z" />
       </svg>
     ),
   },
@@ -30,24 +48,77 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-800 py-12 text-white">
-      <div className="container mx-auto max-w-6xl px-4">
-        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
-          <div className="flex gap-6">
-            {socialLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                aria-label={link.name}
-                className="transition hover:text-blue-200"
-              >
-                {link.icon}
-              </a>
-            ))}
+    <footer className="bg-blue-800 text-white">
+      <div className="container mx-auto max-w-6xl px-4 py-12">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:items-start">
+
+          {/* Brand */}
+          <div>
+            <h3 className="text-xl font-semibold tracking-tight">Tacco</h3>
+            <p className="mt-3 text-sm text-blue-100">
+              Premium sandals crafted for everyday comfort and modern style.
+              Walk confidently from beach days to city nights.
+            </p>
           </div>
-          <p className="text-sm text-blue-100">
-            &copy; {new Date().getFullYear()} Tacco. All rights reserved.
-          </p>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-wide text-blue-100">
+              Quick Links
+            </h4>
+            <nav className="mt-4 space-y-2 text-sm">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="block text-blue-100 transition hover:text-white"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-wide text-blue-100">
+              Connect
+            </h4>
+            <p className="mt-3 text-sm text-blue-100">
+              Have questions about sizing, materials, or bulk orders?
+              Reach out and we&apos;ll be happy to help.
+            </p>
+
+            <p className="mt-3 text-sm text-blue-100">
+              Email:{' '}
+              <a
+                href="mailto:footweartacco@gmail.com"
+                className="font-medium text-white underline-offset-2 hover:underline"
+              >
+                footweartacco@gmail.com
+              </a>
+            </p>
+
+            <div className="mt-4 flex items-center gap-4">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.name}
+                  className="rounded-full bg-blue-700 p-2 text-blue-100 transition hover:bg-blue-600 hover:text-white"
+                >
+                  {link.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+
+        </div>
+
+        <div className="mt-10 border-t border-blue-700 pt-6 text-center text-xs text-blue-200">
+          &copy; {new Date().getFullYear()} Tacco. All rights reserved.
         </div>
       </div>
     </footer>

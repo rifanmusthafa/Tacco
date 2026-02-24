@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 const products = [
   {
     id: 1,
-    name: "Sports Shoe",
+    name: "Sports Shoes",
     image:
       "/ai-generated-sports-shoes-for-the-future-running-shoes-for-the-future-isolated-on-transparent-background-free-png.png",
   },
@@ -14,7 +14,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Formal Shoe",
+    name: "Formal Shoes",
     image:
       "/mens-shoe-isolated-on-transparent-background-free-png.png",
   },
@@ -32,7 +32,7 @@ const products = [
   },
   {
     id: 6,
-    name: "Casual Shoe",
+    name: "Casual Shoes",
     image:
       "/vecteezy_blue-converse-sneakers_48896979.png",
   },

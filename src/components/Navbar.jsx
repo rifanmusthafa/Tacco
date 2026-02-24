@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="container mx-auto max-w-6xl px-4">
         <div className="flex h-16 items-center justify-between">
           <a href="#home" className="text-xl font-bold tracking-tight">
-            Tacco
+            TACCO
           </a>
 
           {/* Desktop nav links */}
