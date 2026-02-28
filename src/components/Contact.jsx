@@ -10,11 +10,30 @@ export default function Contact() {
 
     const phoneNumber = "919074039713";
 
-    const text = `Hi Tacco,%0A%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    const text = `
+Hello Tacco 👋
 
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
+Customer Details:
+-------------------------
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}
+
+Sent from Tacco Website
+`;
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      text
+    )}`;
 
     window.open(whatsappURL, "_blank");
+
+    // Optional: Clear form after submit
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -81,7 +100,7 @@ export default function Contact() {
             </form>
           </div>
 
-          {/* Map (UNCHANGED) */}
+          {/* Map */}
           <div className="h-[350px] w-full overflow-hidden rounded-xl shadow-lg md:h-auto">
             <iframe
               title="Shop Location"

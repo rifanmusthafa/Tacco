@@ -37,7 +37,7 @@ const socialLinks = [
   // Gmail
   {
     name: 'Gmail',
-    href: 'mailto:support@tacco.in',
+    href: 'mailto:footweartacco@gmail.com',
     icon: (
       <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
         <path d="M12 13.065L.8 4.8V19.2c0 .66.54 1.2 1.2 1.2h20c.66 0 1.2-.54 1.2-1.2V4.8L12 13.065zM12 10.935L23.2 2.7C22.99 2.28 22.56 2 22.08 2H1.92C1.44 2 1.01 2.28.8 2.7L12 10.935z" />

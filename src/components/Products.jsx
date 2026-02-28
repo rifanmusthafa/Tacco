@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+
 const products = [
   {
     id: 1,
@@ -38,8 +39,6 @@ const products = [
   },
 ];
 
-
-// Duplicate first item for smooth infinite loop
 const extendedProducts = [...products, products[0]];
 
 export default function Products() {
@@ -47,6 +46,9 @@ export default function Products() {
   const [enableTransition, setEnableTransition] = useState(true);
   const containerRef = useRef(null);
   const timeoutRef = useRef(null);
+
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const CARD_WIDTH = 300;
   const GAP = 24;
@@ -75,7 +77,29 @@ export default function Products() {
     }
   }, [index]);
 
-  // Center Active Card
+  // Swipe Handlers
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const distance = touchStartX.current - touchEndX.current;
+
+    if (distance > 50) {
+      // Swipe Left
+      setIndex((prev) => prev + 1);
+    }
+
+    if (distance < -50) {
+      // Swipe Right
+      setIndex((prev) => (prev === 0 ? 0 : prev - 1));
+    }
+  };
+
   const getCenterOffset = () => {
     if (!containerRef.current) return 0;
     const containerWidth = containerRef.current.offsetWidth;
@@ -90,7 +114,13 @@ export default function Products() {
         </h2>
       </div>
 
-      <div ref={containerRef} className="relative w-full overflow-hidden">
+      <div
+        ref={containerRef}
+        className="relative w-full overflow-hidden"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <div
           className={`flex ${
             enableTransition
@@ -121,9 +151,6 @@ export default function Products() {
                 <h3 className="font-semibold text-gray-700 text-lg">
                   {product.name}
                 </h3>
-                <p className="mt-1 text-xl font-bold text-blue-600">
-                  {product.price}
-                </p>
               </div>
             </article>
           ))}
