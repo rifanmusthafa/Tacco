@@ -10,6 +10,7 @@ export default function Hero() {
         loop
         muted
         playsInline
+        poster="/vecteezy_a-white-blue-and-green-casual-shoe-is-suspended-in-the_29284771.jpg"
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source src="/taccovideo.mp4" type="video/mp4" />
