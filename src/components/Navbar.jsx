@@ -14,7 +14,7 @@ export default function Navbar() {
   const closeMenu = () => setIsMenuOpen(false)
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-blue-800 text-white shadow-lg">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0069B4] text-white shadow-lg">
       <div className="container mx-auto max-w-6xl px-4">
         <div className="flex h-16 items-center justify-between">
           <a href="#home" className="text-xl font-bold tracking-tight">

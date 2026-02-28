@@ -10,7 +10,7 @@ export default function Hero() {
         loop
         muted
         playsInline
-        poster="/vecteezy_a-white-blue-and-green-casual-shoe-is-suspended-in-the_29284771.jpg"
+        poster="/Users/rifan/Tacco/public/HeroImg.webp"
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source src="/taccovideo.mp4" type="video/mp4" />
@@ -31,7 +31,7 @@ export default function Hero() {
 
         <a
           href="#products"
-          className="inline-block rounded-lg bg-blue-600 px-8 py-3 font-semibold text-white shadow-lg transition hover:bg-blue-700"
+          className="inline-block rounded-lg bg-[#0069B4] px-8 py-3 font-semibold text-white shadow-lg transition hover:opacity-90"
         >
           Shop Now
         </a>

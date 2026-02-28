@@ -4,7 +4,7 @@ const navLinks = [
   { href: '#products', label: 'Products' },
   { href: '#gallery', label: 'Gallery' },
   { href: '#contact', label: 'Contact' },
-]
+] 
 
 const socialLinks = [
   // Instagram
@@ -48,14 +48,14 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-800 text-white">
+    <footer className="bg-[#0069B4] text-white">
       <div className="container mx-auto max-w-6xl px-4 py-12">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:items-start">
 
           {/* Brand */}
           <div>
             <h3 className="text-xl font-semibold tracking-tight">Tacco</h3>
-            <p className="mt-3 text-sm text-blue-100">
+            <p className="mt-3 text-sm text-white">
               Premium sandals crafted for everyday comfort and modern style.
               Walk confidently from beach days to city nights.
             </p>
@@ -63,7 +63,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wide text-blue-100">
+            <h4 className="text-sm font-semibold uppercase tracking-wide text-white">
               Quick Links
             </h4>
             <nav className="mt-4 space-y-2 text-sm">
@@ -71,7 +71,7 @@ export default function Footer() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="block text-blue-100 transition hover:text-white"
+                  className="block text-white transition hover:underline"
                 >
                   {link.label}
                 </a>
@@ -81,16 +81,16 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-sm font-semibold uppercase tracking-wide text-blue-100">
+            <h4 className="text-sm font-semibold uppercase tracking-wide text-white">
               Connect
             </h4>
-            <p className="mt-3 text-sm text-blue-100">
+            <p className="mt-3 text-sm text-white">
               Have questions about sizing, materials, or bulk orders?
               Reach out and we&apos;ll be happy to help.
             </p>
 
-            <p className="mt-3 text-sm text-blue-100">
-              Email:{' '}
+            <p className="mt-3 text-sm text-white">
+              Email{' '}
               <a
                 href="mailto:footweartacco@gmail.com"
                 className="font-medium text-white underline-offset-2 hover:underline"
@@ -107,7 +107,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={link.name}
-                  className="rounded-full bg-blue-700 p-2 text-blue-100 transition hover:bg-blue-600 hover:text-white"
+                  className="rounded-full bg-[#0069B4] p-2 text-white transition hover:opacity-80"
                 >
                   {link.icon}
                 </a>
@@ -117,10 +117,126 @@ export default function Footer() {
 
         </div>
 
-        <div className="mt-10 border-t border-blue-700 pt-6 text-center text-xs text-blue-200">
+        <div className="mt-10 border-t border-white pt-6 text-center text-xs text-white">
           &copy; {new Date().getFullYear()} Tacco. All rights reserved.
         </div>
       </div>
     </footer>
   )
 }
+// const navLinks = [
+//   { href: '#home', label: 'Home' },
+//   { href: '#about', label: 'About' },
+//   { href: '#products', label: 'Products' },
+//   { href: '#gallery', label: 'Gallery' },
+//   { href: '#contact', label: 'Contact' },
+// ]
+
+// const socialLinks = [
+//   {
+//     name: 'Instagram',
+//     href: 'https://www.instagram.com/tacco.in/',
+//     icon: (
+//       <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+//         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z" />
+//       </svg>
+//     ),
+//   },
+//   {
+//     name: 'WhatsApp',
+//     href: 'https://wa.me/919074039713',
+//     icon: (
+//       <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+//         <path d="M20.52 3.48A11.82 11.82 0 0012.04 0C5.4 0 .12 5.28.12 11.92c0 2.1.55 4.15 1.6 5.97L0 24l6.25-1.64a11.87 11.87 0 005.79 1.48z" />
+//       </svg>
+//     ),
+//   },
+//   {
+//     name: 'Gmail',
+//     href: 'mailto:footweartacco@gmail.com',
+//     icon: (
+//       <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+//         <path d="M12 13.065L.8 4.8V19.2c0 .66.54 1.2 1.2 1.2h20c.66 0 1.2-.54 1.2-1.2V4.8L12 13.065z" />
+//       </svg>
+//     ),
+//   },
+// ]
+
+// export default function Footer() {
+//   return (
+//     <footer className="bg-[#38649C] text-white">
+//       <div className="container mx-auto max-w-6xl px-4 py-12">
+//         <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:items-start">
+
+//           {/* Brand */}
+//           <div>
+//             <h3 className="text-xl font-semibold tracking-tight">Tacco</h3>
+//             <p className="mt-3 text-sm text-white/90">
+//               Premium sandals crafted for everyday comfort and modern style.
+//               Walk confidently from beach days to city nights.
+//             </p>
+//           </div>
+
+//           {/* Quick Links */}
+//           <div>
+//             <h4 className="text-sm font-semibold uppercase tracking-wide text-white/90">
+//               Quick Links
+//             </h4>
+//             <nav className="mt-4 space-y-2 text-sm">
+//               {navLinks.map((link) => (
+//                 <a
+//                   key={link.href}
+//                   href={link.href}
+//                   className="block text-white/90 transition hover:text-white"
+//                 >
+//                   {link.label}
+//                 </a>
+//               ))}
+//             </nav>
+//           </div>
+
+//           {/* Contact */}
+//           <div>
+//             <h4 className="text-sm font-semibold uppercase tracking-wide text-white/90">
+//               Connect
+//             </h4>
+//             <p className="mt-3 text-sm text-white/90">
+//               Have questions about sizing, materials, or bulk orders?
+//               Reach out and we&apos;ll be happy to help.
+//             </p>
+
+//             <p className="mt-3 text-sm text-white/90">
+//               Email{' '}
+//               <a
+//                 href="mailto:footweartacco@gmail.com"
+//                 className="font-medium text-white underline-offset-2 hover:underline"
+//               >
+//                 footweartacco@gmail.com
+//               </a>
+//             </p>
+
+//             <div className="mt-4 flex items-center gap-4">
+//               {socialLinks.map((link) => (
+//                 <a
+//                   key={link.name}
+//                   href={link.href}
+//                   target="_blank"
+//                   rel="noopener noreferrer"
+//                   aria-label={link.name}
+//                   className="rounded-full bg-[#2F5585] p-2 text-white transition hover:bg-[#2A4C77]"
+//                 >
+//                   {link.icon}
+//                 </a>
+//               ))}
+//             </div>
+//           </div>
+
+//         </div>
+
+//         <div className="mt-10 border-t border-[#2F5585] pt-6 text-center text-xs text-white/80">
+//           &copy; {new Date().getFullYear()} Tacco. All rights reserved.
+//         </div>
+//       </div>
+//     </footer>
+//   )
+// }

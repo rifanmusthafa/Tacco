@@ -27,7 +27,7 @@ const products = [
     image:
       "https://images.unsplash.com/photo-1627123424574-724758594e93?w=600&h=600&fit=crop",
   },
-]
+];
 
 export default function Accessories() {
   return (
@@ -37,6 +37,7 @@ export default function Accessories() {
         <h2 className="mb-4 text-center text-3xl font-bold text-gray-800 md:text-4xl">
           Men’s Accessories Collection
         </h2>
+
         <p className="mb-12 text-center text-gray-500">
           Complete Your Look with Premium Accessories
         </p>
@@ -58,20 +59,25 @@ export default function Accessories() {
               <h3 className="mt-4 text-lg font-semibold text-gray-800">
                 {product.name}
               </h3>
-              <p className="text-sm text-gray-500">{product.category}</p>
 
+              <p className="text-sm text-gray-500">
+                {product.category}
+              </p>
+
+              {/* ✅ Updated Brand Color Button */}
               <a
                 href="https://wa.me/919074039713"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 block rounded-lg bg-blue-600 py-2 text-center text-sm font-medium text-white transition hover:bg-blue-700"
+                className="mt-4 block rounded-lg bg-[#0069B4] py-2 text-center text-sm font-medium text-white transition hover:bg-[#005a99]"
               >
                 Enquire Now
               </a>
+
             </div>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
