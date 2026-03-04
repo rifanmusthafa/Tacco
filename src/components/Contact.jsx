@@ -100,16 +100,17 @@ Sent from Tacco Website
             </form>
           </div>
 
-         {/* Map */}
-<div className="h-[350px] w-full overflow-hidden rounded-xl shadow-lg md:h-auto">
+{/* Map */}
+<div className="h-[350px] w-full overflow-hidden rounded-xl shadow-lg">
   <iframe
-    title="Shop Location"
-    src="https://www.google.com/maps?q=14.906197,78.007332&hl=en&z=17&output=embed"
+    title="TACCO Shoes and Accessories Location"
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4206.967159977115!2d78.0048396!3d14.9064285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb41d66eb68e3db%3A0x3a9399a52954719f!2sTACCO%20SHOES%20AND%20ACCESSORIES!5e1!3m2!1sen!2sin!4v1772619955922!5m2!1sen!2sin"
     width="100%"
     height="100%"
     style={{ border: 0 }}
-    allowFullScreen=""
+    allowFullScreen
     loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
     className="rounded-xl"
   ></iframe>
 </div>
