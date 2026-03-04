@@ -96,6 +96,8 @@ export default function Footer() {
                 className="font-medium text-white underline-offset-2 hover:underline"
               >
                 footweartacco@gmail.com
+                <br />
+                Phone 91 9074039713
               </a>
             </p>
 

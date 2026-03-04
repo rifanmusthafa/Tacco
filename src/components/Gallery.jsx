@@ -3,29 +3,25 @@ const products = [
     id: 1,
     name: "Silver Chain",
     category: "Chains",
-    image:
-      "https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=600&h=600&fit=crop",
+    image: "/chain.jpeg",
   },
   {
     id: 2,
     name: "Men Ring",
     category: "Rings",
-    image:
-      "https://images.unsplash.com/photo-1603561596112-0a132b757442?w=600&h=600&fit=crop",
+    image: "/Ring.jpeg",
   },
   {
     id: 3,
     name: "Stylish Watch",
     category: "Watches",
-    image:
-      "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=600&h=600&fit=crop",
+    image: "/watch.jpeg",
   },
   {
     id: 4,
-    name: "Leather Wallet",
-    category: "Wallets",
-    image:
-      "https://images.unsplash.com/photo-1627123424574-724758594e93?w=600&h=600&fit=crop",
+    name: "Men Bracelets",
+    category: "Bracelets",
+    image: "/bracelets.jpeg",
   },
 ];
 

@@ -4,14 +4,12 @@ const products = [
   {
     id: 1,
     name: "Sports Shoes",
-    image:
-      "/ai-generated-sports-shoes-for-the-future-running-shoes-for-the-future-isolated-on-transparent-background-free-png.png",
+    image: "/sports.png",
   },
   {
     id: 2,
     name: "Sliders",
-    image:
-      "/comfortable-home-slippers-design-isolated-on-transparent-background-png.png",
+    image: "/slides.jpeg",
   },
   {
     id: 3,
@@ -20,11 +18,10 @@ const products = [
       "/mens-shoe-isolated-on-transparent-background-free-png.png",
   },
   {
-    id: 4,
-    name: "Slippers",
-    image:
-      "/summer-slipper-composition-isolated-3d-render-png.png",
-  },
+  id: 4,
+  name: "Slippers",
+  image: "/slippers.jpeg",
+},
   {
     id: 5,
     name: "Boots",
@@ -34,8 +31,12 @@ const products = [
   {
     id: 6,
     name: "Casual Shoes",
-    image:
-      "/vecteezy_blue-converse-sneakers_48896979.png",
+    image: "/casual.jpeg",
+  },
+  {
+    id: 6,
+    name: "Sandals",
+    image: "/sandals.png",
   },
 ];
 

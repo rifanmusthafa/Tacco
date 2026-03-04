@@ -7,20 +7,18 @@ export default function About() {
         </h2>
         <div className="space-y-4 text-gray-700 leading-relaxed">
           <p>
-            At Tacco, we believe that great sandals are more than footwear—they
-            are the foundation of your daily comfort. Founded with a passion for
-            quality and style, we craft sandals that seamlessly blend durability,
-            comfort, and modern design.
+            At Tacco, we bring you premium shoes and stylish men's accessories
+            designed to elevate your everyday look. Our collection combines
+            modern trends with timeless designs to give you confidence in every step.
           </p>
           <p>
-            Every pair is designed with premium materials and attention to
-            detail, ensuring they stand up to beach days, city walks, and
-            everything in between. Whether you prefer classic styles or
-            contemporary looks, Tacco has the perfect sandal for you.
+            From high-quality footwear to bold chains, elegant rings, stylish
+            watches, and durable wallets, each product is selected with a focus
+            on quality, comfort, and lasting performance.
           </p>
           <p>
-            Join thousands of customers who have made Tacco their go-to choice
-            for everyday comfort and effortless style.
+            We believe style is a statement. That’s why Tacco is committed to
+            offering affordable luxury that helps every man look sharp and feel confident.
           </p>
         </div>
       </div>

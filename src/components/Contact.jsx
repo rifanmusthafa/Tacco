@@ -70,7 +70,7 @@ Sent from Tacco Website
                 <input
                   type="email"
                   required
-                  placeholder="your@email.com"
+                  placeholder="your@gmail.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full rounded-lg border border-gray-300 px-4 py-3 shadow-sm focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600/20"
@@ -100,19 +100,19 @@ Sent from Tacco Website
             </form>
           </div>
 
-          {/* Map */}
-          <div className="h-[350px] w-full overflow-hidden rounded-xl shadow-lg md:h-auto">
-            <iframe
-              title="Shop Location"
-              src="https://www.google.com/maps?q=14.906168,78.007286&hl=en&z=17&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              className="rounded-xl"
-            ></iframe>
-          </div>
+         {/* Map */}
+<div className="h-[350px] w-full overflow-hidden rounded-xl shadow-lg md:h-auto">
+  <iframe
+    title="Shop Location"
+    src="https://www.google.com/maps?q=14.906197,78.007332&hl=en&z=17&output=embed"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    className="rounded-xl"
+  ></iframe>
+</div>
 
         </div>
       </div>
