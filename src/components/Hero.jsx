@@ -10,7 +10,7 @@ export default function Hero() {
         loop
         muted
         playsInline
-        poster="/Users/rifan/Tacco/public/HeroImage (1).webp"
+        poster="/HeroImage (1).jpg"
         className="absolute inset-0 h-full w-full object-cover"
       >
         <source src="/taccovideo.mp4" type="video/mp4" />
